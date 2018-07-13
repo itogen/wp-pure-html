@@ -19,9 +19,8 @@
     </header>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
-
+    <?php if(!is_page()){?><?php get_template_part('parts/post-date'); ?><?php } ?>
     <p><?php the_post_thumbnail('post-thumbnails-single'); ?></p>
-    <?php if(!is_page()){?><?php echo get_the_date(); ?><?php } ?>
     <p><?php the_content(); ?></p>
 
 <?php if(!is_page()){?>
