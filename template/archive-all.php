@@ -7,7 +7,7 @@
 <html lang="ja">
     <head>
         <title>すべての記事 | <?php bloginfo('name'); ?></title>
-        <?php wp_head();?>
+        <?php get_template_part('parts/head'); ?>
     </head>
     <body>
 

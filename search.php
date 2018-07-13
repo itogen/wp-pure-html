@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <title><?php the_archive_title(); ?> | <?php bloginfo('name'); ?></title>
-        <?php wp_head();?>
+        <?php get_template_part('parts/head'); ?>
     </head>
     <body>
 

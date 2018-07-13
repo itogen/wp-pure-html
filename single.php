@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
-        <?php wp_head();?>
+        <?php get_template_part('parts/head'); ?>
     </head>
     <body>
 
@@ -34,7 +34,9 @@
 
 
         <footer>
+<?php if(!is_page()){?>
             <?php dynamic_sidebar('profile'); ?>
+<?php } ?>
             <?php dynamic_sidebar('footer'); ?>
             <p>&copy;<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></p>
             <?php wp_footer();?>
