@@ -37,6 +37,14 @@ register_sidebar(array(
     'before_title' => '<h2>',
     'after_title' => '</h2>'
 ));
+register_sidebar(array(
+    'name' => 'After Content',
+    'id' => 'after-content',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+));
 
 // 続きを読むでスクロールさせない
 function remove_more_link_scroll( $link ) {
